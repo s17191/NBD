@@ -1,0 +1,302 @@
+﻿[
+  {
+    "p": {
+"start": {
+"identity": 179,
+"labels": [
+          "Movie"
+        ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+        }
+      },
+"end": {
+"identity": 4,
+"labels": [
+          "Person"
+        ],
+"properties": {
+"born": 1960,
+"name": "Hugo Weaving"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 179,
+"labels": [
+              "Movie"
+            ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+            }
+          },
+          "relationship": {
+"identity": 262,
+"start": 179,
+"end": 4,
+"type": "ACTED_IN",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 4,
+"labels": [
+              "Person"
+            ],
+"properties": {
+"born": 1960,
+"name": "Hugo Weaving"
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 179,
+"labels": [
+          "Movie"
+        ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+        }
+      },
+"end": {
+"identity": 183,
+"labels": [
+          "Person"
+        ],
+"properties": {
+"born": 1981,
+"name": "Chris Evans"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 179,
+"labels": [
+              "Movie"
+            ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+            }
+          },
+          "relationship": {
+"identity": 261,
+"start": 179,
+"end": 183,
+"type": "ACTED_IN",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 183,
+"labels": [
+              "Person"
+            ],
+"properties": {
+"born": 1981,
+"name": "Chris Evans"
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 179,
+"labels": [
+          "Movie"
+        ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+        }
+      },
+"end": {
+"identity": 182,
+"labels": [
+          "Person"
+        ],
+"properties": {
+"born": 1970,
+"name": "Stephen McFeely"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 179,
+"labels": [
+              "Movie"
+            ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+            }
+          },
+          "relationship": {
+"identity": 260,
+"start": 179,
+"end": 182,
+"type": "WROTE",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 182,
+"labels": [
+              "Person"
+            ],
+"properties": {
+"born": 1970,
+"name": "Stephen McFeely"
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 179,
+"labels": [
+          "Movie"
+        ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+        }
+      },
+"end": {
+"identity": 181,
+"labels": [
+          "Person"
+        ],
+"properties": {
+"born": 1970,
+"name": "Christopher Markus"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 179,
+"labels": [
+              "Movie"
+            ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+            }
+          },
+          "relationship": {
+"identity": 259,
+"start": 179,
+"end": 181,
+"type": "WROTE",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 181,
+"labels": [
+              "Person"
+            ],
+"properties": {
+"born": 1970,
+"name": "Christopher Markus"
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  },
+  {
+    "p": {
+"start": {
+"identity": 179,
+"labels": [
+          "Movie"
+        ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+        }
+      },
+"end": {
+"identity": 180,
+"labels": [
+          "Person"
+        ],
+"properties": {
+"born": 1950,
+"name": "Joe Johnston"
+        }
+      },
+"segments": [
+        {
+          "start": {
+"identity": 179,
+"labels": [
+              "Movie"
+            ],
+"properties": {
+"tagline": "When Patriots Become Heroes",
+"title": "Captain America: The First Avenger",
+"released": 2011
+            }
+          },
+          "relationship": {
+"identity": 258,
+"start": 179,
+"end": 180,
+"type": "DIRECTED",
+"properties": {
+
+            }
+          },
+          "end": {
+"identity": 180,
+"labels": [
+              "Person"
+            ],
+"properties": {
+"born": 1950,
+"name": "Joe Johnston"
+            }
+          }
+        }
+      ],
+"length": 1.0
+    }
+  }
+]

@@ -1,0 +1,34 @@
+CREATE (m:Movie {title: 'Captain America: The First Avenger', released: 2011, tagline: 'When Patriots Become Heroes'})
+CREATE (m:Person {name: 'Joe Johnston', born:1950})
+CREATE (m:Person {name: 'Christopher Markus', born:1970})
+CREATE (m:Person {name: 'Stephen McFeely', born:1970})
+CREATE (m:Person {name: 'Chris Evans', born:1981})
+
+MATCH (a:Movie), (b:Person)
+WHERE a.title='Captain America: The First Avenger'
+AND b.name='Joe Johnston'
+CREATE (a)-[r:DIRECTED]->(b)
+RETURN type(r)
+
+MATCH (a:Movie), (b:Person)
+WHERE a.title='Captain America: The First Avenger'
+AND b.name='Christopher Markus'
+CREATE (a)-[r:WROTE]->(b)
+
+MATCH (a:Movie), (b:Person)
+WHERE a.title='Captain America: The First Avenger'
+AND b.name='Stephen McFeely'
+CREATE (a)-[r:WROTE]->(b)
+
+MATCH (a:Movie), (b:Person)
+WHERE a.title='Captain America: The First Avenger'
+AND b.name='Chris Evans'
+CREATE (a)-[r:ACTED_IN]->(b)
+
+MATCH (a:Movie), (b:Person)
+WHERE a.title='Captain America: The First Avenger'
+AND b.name='Hugo Weaving'
+CREATE (a)-[r:ACTED_IN]->(b)
+
+MATCH p=((a:Movie{title:'Captain America: The First Avenger'})-[:ACTED_IN | :DIRECTED | :WROTE]-(b:Person))
+RETURN p

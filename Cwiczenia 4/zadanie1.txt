@@ -1,0 +1,2 @@
+MATCH (n:town{name: 'Darjeeling'}), (m:peak{name:'Sandakphu'}), p = allShortestPaths((n)-[b*]-(m))
+RETURN p

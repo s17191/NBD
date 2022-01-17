@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">#używać starej wersji pythona do kompilacji</span>
+<span class="s2">import </span><span class="s1">riak</span>
+
+<span class="s1">client = riak.RiakClient(port=</span><span class="s3">8087</span><span class="s1">)</span>
+<span class="s1">bucket = client.bucket(</span><span class="s4">'s17191'</span><span class="s1">)</span>
+<span class="s1">json ={</span><span class="s4">&quot;ENAME&quot;</span><span class="s1">:</span><span class="s4">&quot;JAMES&quot;</span><span class="s1">}</span>
+<span class="s1">key = bucket.new(</span><span class="s4">'7900'</span><span class="s2">, </span><span class="s1">data=json)</span>
+<span class="s1">key.store()</span>
+
+<span class="s1">select = bucket.get(</span><span class="s4">'7900'</span><span class="s1">)</span>
+<span class="s1">print(select.data)</span>
+
+<span class="s1">select.data={</span><span class="s4">&quot;ENAME&quot;</span><span class="s1">:</span><span class="s4">&quot;WARD&quot;</span><span class="s1">}</span>
+<span class="s1">select.store()</span>
+
+<span class="s1">select = bucket.get(</span><span class="s4">'7900'</span><span class="s1">)</span>
+<span class="s1">print(select.data)</span>
+
+<span class="s1">select.delete()</span>
+
+<span class="s1">select = bucket.get(</span><span class="s4">'7900'</span><span class="s1">)</span>
+<span class="s1">print(select.data)</span>
+
+
+
+
+
+
+
+</pre>
+</body>
+</html>

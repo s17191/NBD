@@ -1,0 +1,2 @@
+MATCH (movie:Movie)-[:ACTED_IN]-(actor)
+RETURN (actor), count(movie)
